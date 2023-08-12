@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>애슬레저 1위, 안다르</title>
+  <!-- css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/css/layout.css">
   <link rel="stylesheet" href="./assets/css/main.css">
   <link rel="icon" type="image/png" href="./assets/images/favicon.png" sizes="192x192">
+  <!-- js -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="./assets/js/main.js"></script>
 
-  <!-- 레이아웃 가져오고 메인 -->
 </head>
 
 <body>
@@ -106,8 +107,8 @@
 
       <div class="login-area">
         <div class="btn-wrap">
-          <a href="" class="link-login">로그인</a>
-          <a href="" class="link-join">회원가입</a>
+          <a href="#" role="button" class="link-login">로그인</a>
+          <a href="#" role="button" class="link-join">회원가입</a>
         </div>
         <p>로그인하고, <em>회원 전용 혜택</em> 확인하기</p>
       </div>
@@ -122,7 +123,9 @@
             </ul>
           </li><!-- 대메뉴 -->
           <li class="nav-item">
-            <a href="" class="nav"><span class="point">베스트</span></a>
+            <a href="" class="nav">
+              <span class="point">베스트</span>
+            </a>
             <!--  -->
             <ul class="sub-list">
               <li><a href="">전체</a></li>
@@ -247,18 +250,20 @@
           <h3 class="title">이벤트</h3>
           <a href="" class="img">
             <div class="img-box">
-              <img src="./assets/images/left-event.jpg" alt>
+              <img src="./assets/images/left-event.jpg">
             </div>
             <div class="desc-box">
               <strong>레깅스가 부담되는 날</strong>
               <p>입는 순간 슬림한 조거팬츠</p>
-              <span class="link-all">전체 →</span>
+              <span role="button" class="link-all">전체 →
+                <span class="blind">이벤트 전체보기</span>
+              </span>
             </div>
           </a>
         </div>
         <div class="sub-area">
-          <a href="" class="">브랜드 스토리</a>
-          <a href="" class="">전국매장안내</a>
+          <a href="" role="button">브랜드 스토리</a>
+          <a href="" role="button">전국매장안내</a>
         </div>
       </div>
 
@@ -267,21 +272,23 @@
         <ul class="recent-list">
           <li class="recent-item">
             <a href="">
-              <img src="./assets/images/best-prod1.jpg" alt="">
+              <img src="./assets/images/best-prod1.jpg">
             </a>
           </li>
           <li class="recent-item">
             <a href="">
-              <img src="./assets/images/best-prod1.jpg" alt="">
+              <img src="./assets/images/best-prod2.jpg">
             </a>
           </li>
           <li class="recent-item">
             <a href="">
-              <img src="./assets/images/best-prod1.jpg" alt="">
+              <img src="./assets/images/best-prod3.jpg">
             </a>
           </li>
         </ul>
-        <a href="" class="link-all">전체보기</a>
+        <a href="" role="button" class="link-all">전체보기
+          <span class="blind">최근 본 상품 전체보기</span>
+        </a>
       </div>
 
       <button class="btn-close"><span class="blind">메뉴닫기</span></button>
@@ -294,15 +301,15 @@
       <section class="group-search">
         <section class="sc-search active">
           <button class="btn-side"><span class="blind">검색창닫기버튼</span>
-          <img src="./assets/images/btn-sidesearch.png" alt="">
+          <img src="./assets/images/btn-sidesearch.png" alt="뒤로가기버튼">
           </button>
           <div class="search-area">
             <fieldset>
               <legend class="blind">검색</legend>
               <div class="search-wrap">
                 <input type="text" class="input-text" placeholder="검색어를 입력하세요">
-                <button class="btn-submit">
-                  <span class="blind">검색</span>
+                <button type="submit" class="btn-submit">
+                  <span class="blind">검색하기버튼</span>
                 </button>
               </div>
             </fieldset>
@@ -311,7 +318,8 @@
       </section>
   
 
-      <div class="top-banner">
+      <aside class="top-banner">
+        <h2 class="blind">상단광고배너</h2>
         <div class="swiper top-slide">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -329,7 +337,7 @@
             </div>
           </div>
         </div>
-      </div><!-- top-banner -->
+      </aside><!-- top-banner -->
 
 
       <section class="sc-main">
@@ -339,7 +347,7 @@
 
             <div class="swiper-slide">
               <a href="">
-                <img src="./assets/images/main-slide1.jpg" alt>
+                <img src="./assets/images/main-slide1.jpg">
                 <div class="desc-box">
                   <strong class="title">4년간의 연구 끝에 탄생, <br> NEW 릴레어 시리즈</strong>
                   <p class="desc">글로벌 최초로 인증 받은 <br> 라이크라® 쉐이핑 테크놀로지를 만나보세요.</p>
@@ -348,7 +356,7 @@
             </div>
             <div class="swiper-slide">
               <a href="">
-                <img src="./assets/images/main-slide2.jpg" alt>
+                <img src="./assets/images/main-slide2.jpg">
                 <div class="desc-box">
                   <strong class="title">새로운 컬러로 만나는 <br> 애슬레저 1위 레깅스</strong>
                   <p class="desc">국내 유일, 라이크라® 스포츠 인증을 받은 <br> 안다르의 레깅스를 지금 만나보세요.</p>
@@ -357,7 +365,7 @@
             </div>
             <div class="swiper-slide">
               <a href="">
-                <img src="./assets/images/main-slide3.jpg" alt>
+                <img src="./assets/images/main-slide3.jpg">
                 <div class="desc-box">
                   <strong class="title">단 5일, 회원 한정 <br> 봄 신상 할인 혜택</strong>
                   <p class="desc">애슬레저 1위 안다르의 신상을 <br>지금 바로 확인하세요.</p>
@@ -366,7 +374,7 @@
             </div>
             <div class="swiper-slide">
               <a href="">
-                <img src="./assets/images/main-slide4.jpg" alt>
+                <img src="./assets/images/main-slide4.jpg">
                 <div class="desc-box">
                   <strong class="title">비즈니스 캐주얼을 위한 <br>기능성 청바지의 탄생</strong>
                   <p class="desc">출근길도 함께하는 깔끔한 스타일,<br>땀⋅무릎 나옴⋅끼임 모두 해결했어요.</p>
@@ -375,7 +383,7 @@
             </div>
             <div class="swiper-slide">
               <a href="">
-                <img src="./assets/images/main-slide5.jpg" alt>
+                <img src="./assets/images/main-slide5.jpg">
                 <div class="desc-box">
                   <strong class="title">예쁜 스포츠 브라탑 <br>입고 벗기 쉬운 매력까지</strong>
                   <p class="desc">라이트⋅미디엄⋅하이로 나뉜 다양한 서포트력, <br>취향과 상황에 맞게 선택하세요.</p>
@@ -384,7 +392,7 @@
             </div>
             <div class="swiper-slide">
               <a href="">
-                <img src="./assets/images/main-slide6.jpg" alt>
+                <img src="./assets/images/main-slide6.jpg">
                 <div class="desc-box">
                   <strong class="title">활용도 200%의 깔끔함 <br>카라 티셔츠 신상 출시</strong>
                   <p class="desc">필드와 일상을 함께하는 스타일. <br>안다르의 기능성을 더해 쾌적한 착용감까지</p>
@@ -393,7 +401,7 @@
             </div>
             <div class="swiper-slide">
               <a href="">
-                <img src="./assets/images/main-slide7.jpg" alt>
+                <img src="./assets/images/main-slide7.jpg">
                 <div class="desc-box">
                   <strong class="title">출근길부터 골프까지 <br> NEW 맨즈 폴로 티셔츠</strong>
                   <p class="desc">쾌적한 기능성에 더한 클래식함<br>더 깔끔해진 새로운 핏으로 만나보세요.</p>
@@ -412,11 +420,11 @@
       <section class="sc-bestprod">
         <h2 class="headline">BEST</h2>
 
-        <ul class="tab-list">
-          <li class="tab-item active"><a href="">전체</a></li>
-          <li class="tab-item"><a href="">우먼즈</a></li>
-          <li class="tab-item"><a href="">맨즈</a></li>
-          <li class="tab-item"><a href="">홈트용품 & ACC</a></li>
+        <ul class="tab-list"role="tablist">
+          <li class="tab-item active" role="tab" aria-selected="true"><a href="">전체</a></li>
+          <li class="tab-item" role="tab" aria-selected="false"><a href="">우먼즈</a></li>
+          <li class="tab-item" role="tab" aria-selected="false"><a href="">맨즈</a></li>
+          <li class="tab-item" role="tab" aria-selected="false"><a href="">홈트용품 & ACC</a></li>
         </ul>
 
         <ul class="product-list list1">
@@ -424,7 +432,7 @@
           <li class="product-item">
             <a href="">
               <div class="img-box">
-                <img src="./assets/images/best-prod1.jpg" alt="에어쿨링지니시그니처레깅스">
+                <img src="./assets/images/best-prod1.jpg" alt="1+1 4.5부 레깅스">
                 <div class="badge-wrap">
                   <em class="numb">1</em>
                 </div>
@@ -449,7 +457,7 @@
           <li class="product-item">
             <a href="">
               <div class="img-box">
-                <img src="./assets/images/best-prod2.jpg" alt="에어쿨링지니시그니처레깅스">
+                <img src="./assets/images/best-prod2.jpg" alt="1&1 숏·롱슬리브">
                 <div class="badge-wrap">
                   <em class="numb">2</em>
                 </div>
@@ -470,7 +478,7 @@
           <li class="product-item">
             <a href="">
               <div class="img-box">
-                <img src="./assets/images/best-prod3.jpg" alt="에어쿨링지니시그니처레깅스">
+                <img src="./assets/images/best-prod3.jpg" alt="SET 에어스트 슬랙스&폴로 숏슬리브">
                 <div class="badge-wrap">
                   <em class="numb">3</em>
                 </div>
@@ -495,7 +503,7 @@
           <li class="product-item">
             <a href="">
               <div class="img-box">
-                <img src="./assets/images/best-prod4.jpg" alt="에어쿨링지니시그니처레깅스">
+                <img src="./assets/images/best-prod4.jpg" alt="1+1 8.2부·9부">
                 <div class="badge-wrap">
                   <em class="numb">4</em>
                 </div>
@@ -520,7 +528,7 @@
           <li class="product-item">
             <a href="">
               <div class="img-box">
-                <img src="./assets/images/best-prod5.jpg" alt="에어쿨링지니시그니처레깅스">
+                <img src="./assets/images/best-prod5.jpg">
                 <div class="badge-wrap">
                   <em class="numb">5</em>
                   <img src="./assets/images/new-badge.png" alt="신상품">
@@ -544,7 +552,7 @@
           <li class="product-item">
             <a href="">
               <div class="img-box">
-                <img src="./assets/images/best-prod6.jpg" alt="에어쿨링지니시그니처레깅스">
+                <img src="./assets/images/best-prod6.jpg" alt="1&1 숏·롱슬리브">
                 <div class="badge-wrap">
                   <em class="numb">6</em>
                 </div>
@@ -569,7 +577,7 @@
 
         </ul>
 
-        <a href="" class="link-all">
+        <a href="" role="button" class="link-all">
           <span><em>베스트</em> 전체보기</span>
         </a>
 
@@ -589,12 +597,12 @@
         <section class="group-theme theme1">
           <div class="intro-area">
             <a href="">
-              <img src="./assets/images/main-set1.jpg" alt="스윔웨어">
+              <img src="./assets/images/main-set1.jpg">
               <div class="desc-box">
                 <h3 class="headline">액티브한 고기능성에<br>하이엔드 감성을 더한 스윔웨어</h3>
                 <p class="desc">자외선 차단 래쉬가드부터 고급스런 비키니까지. <br>안다르와 휴양지에서 인생샷 남겨요.</p>
             </a>
-            <a href="" class="link-more">보러가기</a>
+            <a href="" role="button" class="link-more">보러가기</a>
           </div>
           <ul class="product-list list2">
             <li class="product-item">
@@ -650,7 +658,7 @@
                 <h3 class="headline">튼튼한 허벅지도 부각 없이,<br>길어 보이는 맨즈 테이퍼드핏</h3>
                 <p class="desc">출근부터 골프까지 착용하는 슬랙스<br>운동복보다 편안한 청바지를 만나보세요.</p>
             </a>
-            <a href="" class="link-more">보러가기</a>
+            <a href="" role="button" class="link-more">보러가기</a>
           </div>
           <ul class="product-list list2">
             <li class="product-item">
@@ -787,7 +795,7 @@
 
         </ul>
 
-        <a href="" class="link-all">
+        <a href="" role="button" class="link-all">
           <span>신상 더보기</span>
         </a>
       </section>
@@ -798,7 +806,7 @@
 
           <strong class="title">Stretch your <br> story with andar</strong>
           <p class="desc">*애슬레저 1위, 2022 대한민국 패션 품질 대상,<br> 스포츠 애슬레저 브랜드 부문</p>
-          <span class="btn-more">자세히 보기</span>
+          <span role="button" class="btn-more">자세히 보기</span>
         </a>
       </section>
 
@@ -815,7 +823,7 @@
               <li class="swiper-slide product-item">
                 <a href="">
                   <div class="img-box">
-                    <img src="./assets/images/leg1.jpg" alt="에어쿨링지니시그니처레깅스">
+                    <img src="./assets/images/leg1.jpg" alt="1+1 8.2부·9부">
                     <div class="badge-wrap">
                     </div>
                   </div>
@@ -839,7 +847,7 @@
               <li class="swiper-slide product-item">
                 <a href="">
                   <div class="img-box">
-                    <img src="./assets/images/leg2.jpg" alt="에어쿨링 4.5부 레깅스">
+                    <img src="./assets/images/leg2.jpg" alt="1+1 4.5부 레깅스">
                     <div class="badge-wrap">
                     </div>
                   </div>
@@ -863,7 +871,7 @@
               <li class="swiper-slide product-item">
                 <a href="">
                   <div class="img-box">
-                    <img src="./assets/images/leg3.jpg" alt="에어리프리 조거핏 레깅스">
+                    <img src="./assets/images/leg3.jpg" alt="1&1 에어리프리 조거핏 레깅스">
                     <div class="badge-wrap">
                     </div>
                   </div>
@@ -903,7 +911,7 @@
               <li class="swiper-slide product-item">
                 <a href="">
                   <div class="img-box">
-                    <img src="./assets/images/leg5.jpg" alt="에어쿨링 3부 레깅스">
+                    <img src="./assets/images/leg5.jpg" alt="1&1 3부 레깅스">
                     <div class="badge-wrap">
                     </div>
                   </div>
@@ -927,7 +935,7 @@
               <li class="swiper-slide product-item">
                 <a href="">
                   <div class="img-box">
-                    <img src="./assets/images/leg6.jpg" alt="에어쿨링 지니 바이커 5부 레깅스">
+                    <img src="./assets/images/leg6.jpg" alt="1+1 5부 레깅스">
                     <div class="badge-wrap">
                     </div>
                   </div>
@@ -951,7 +959,7 @@
               <li class="swiper-slide product-item">
                 <a href="">
                   <div class="img-box">
-                    <img src="./assets/images/leg7.jpg" alt="NEW 에어쿨링 샤론 부츠컷 레깅스">
+                    <img src="./assets/images/leg7.jpg" alt="1&1 숏·롱">
                     <div class="badge-wrap">
                     </div>
                   </div>
@@ -1019,7 +1027,7 @@
               <li class="swiper-slide product-item">
                 <a href="">
                   <div class="img-box">
-                    <img src="./assets/images/leg10.jpg" alt="릴레어 레깅스">
+                    <img src="./assets/images/leg10.jpg" alt="1&1 8.2부·9부">
                     <div class="badge-wrap">
                     </div>
                   </div>
@@ -1038,7 +1046,7 @@
               </li>
             </ul>
           </div>
-          <a href="" class="link-more">더보기</a>
+          <a href="" role="button" class="link-more">더보기</a>
         </section>
         <!-- ... -->
         <section class="group-cate">
@@ -1049,7 +1057,7 @@
               <li class="swiper-slide product-item">
                 <a href="">
                   <div class="img-box">
-                    <img src="./assets/images/bra-top1.jpg" alt="비 프리 레이서백 크롭탑">
+                    <img src="./assets/images/bra-top1.jpg" alt="1&1 크롭탑">
                     <div class="badge-wrap">
                     </div>
                   </div>
@@ -1115,7 +1123,7 @@
               <li class="swiper-slide product-item">
                 <a href="">
                   <div class="img-box">
-                    <img src="./assets/images/bra-top4.jpg" alt="에어리프리 소프트 브라탑">
+                    <img src="./assets/images/bra-top4.jpg" alt="1&1 소프트 브라탑">
                     <div class="badge-wrap">
                     </div>
                   </div>
@@ -1158,7 +1166,7 @@
               <li class="swiper-slide product-item">
                 <a href="">
                   <div class="img-box">
-                    <img src="./assets/images/bra-top6.jpg" alt="비 프리 브리드 브라탑">
+                    <img src="./assets/images/bra-top6.jpg" alt="1&1 브라탑">
                     <div class="badge-wrap">
                     </div>
                   </div>
@@ -1228,7 +1236,7 @@
               <li class="swiper-slide product-item">
                 <a href="">
                   <div class="img-box">
-                    <img src="./assets/images/bra-top9.jpg" alt="에어리프리 소프트 크롭탑">
+                    <img src="./assets/images/bra-top9.jpg" alt="1&1 소프트 크롭탑">
                     <div class="badge-wrap">
                     </div>
                   </div>
@@ -1274,7 +1282,7 @@
 
             </ul>
           </div>
-          <a href="" class="link-more">더보기</a>
+          <a href="" role="button" class="link-more">더보기</a>
         </section>
         <!-- ... -->
         <section class="group-cate">
@@ -1285,7 +1293,7 @@
               <li class="swiper-slide product-item">
                 <a href="">
                   <div class="img-box">
-                    <img src="./assets/images/set1.jpg" alt="에어쿨링지니시그니처레깅스">
+                    <img src="./assets/images/set1.jpg" alt="1+1 8.2부·9부">
                     <div class="badge-wrap">
                     </div>
                   </div>
@@ -1309,7 +1317,7 @@
               <li class="swiper-slide product-item">
                 <a href="">
                   <div class="img-box">
-                    <img src="./assets/images/set2.jpg" alt="에어리핏 오버핏 티셔츠">
+                    <img src="./assets/images/set2.jpg" alt="1+1 숏·롱슬리브">
                     <div class="badge-wrap">
                     </div>
                   </div>
@@ -1330,7 +1338,7 @@
               <li class="swiper-slide product-item">
                 <a href="">
                   <div class="img-box">
-                    <img src="./assets/images/set3.jpg" alt="에어쿨링 4.5부 레깅스">
+                    <img src="./assets/images/set3.jpg" alt="1+1 4.5부 레깅스">
                     <div class="badge-wrap">
                     </div>
                   </div>
@@ -1354,7 +1362,7 @@
               <li class="swiper-slide product-item">
                 <a href="">
                   <div class="img-box">
-                    <img src="./assets/images/set4.jpg" alt="에어리핏 스탠다드핏 티셔츠">
+                    <img src="./assets/images/set4.jpg" alt="1&1 숏·롱슬리브">
                     <div class="badge-wrap">
                     </div>
                   </div>
@@ -1374,7 +1382,7 @@
               <li class="swiper-slide product-item">
                 <a href="">
                   <div class="img-box">
-                    <img src="./assets/images/set5.jpg" alt="에어스트 3.5부 쇼츠">
+                    <img src="./assets/images/set5.jpg" alt="1&1 3.5부 쇼츠">
                     <div class="badge-wrap">
                     </div>
                   </div>
@@ -1394,7 +1402,7 @@
               <li class="swiper-slide product-item">
                 <a href="">
                   <div class="img-box">
-                    <img src="./assets/images/set6.jpg" alt="에어쿨링 샤론 부츠컷 레깅스">
+                    <img src="./assets/images/set6.jpg" alt="1&1 숏·롱">
                     <div class="badge-wrap">
                     </div>
                   </div>
@@ -1418,7 +1426,7 @@
               <li class="swiper-slide product-item">
                 <a href="">
                   <div class="img-box">
-                    <img src="./assets/images/set7.jpg" alt="에어쿨링 지니 바이커 5부 레깅스">
+                    <img src="./assets/images/set7.jpg" alt="1+1 5부 레깅스">
                     <div class="badge-wrap">
                     </div>
                   </div>
@@ -1442,7 +1450,7 @@
               <li class="swiper-slide product-item">
                 <a href="">
                   <div class="img-box">
-                    <img src="./assets/images/set8.jpg" alt="에어리핏 슬림핏 티셔츠">
+                    <img src="./assets/images/set8.jpg" alt="1&1 숏·롱슬리브">
                     <div class="badge-wrap">
                     </div>
                   </div>
@@ -1462,7 +1470,7 @@
               <li class="swiper-slide product-item">
                 <a href="">
                   <div class="img-box">
-                    <img src="./assets/images/set9.jpg" alt="에어쿨링 3부 레깅스">
+                    <img src="./assets/images/set9.jpg" alt="1&1 3부 레깅스">
                     <div class="badge-wrap">
                     </div>
                   </div>
@@ -1486,7 +1494,7 @@
               <li class="swiper-slide product-item">
                 <a href="">
                   <div class="img-box">
-                    <img src="./assets/images/set10.jpg" alt="에어쿨링지니시그니처레깅스">
+                    <img src="./assets/images/set10.jpg" alt="1&1 크롭티">
                     <div class="badge-wrap">
                     </div>
                   </div>
@@ -1505,7 +1513,7 @@
               </li>
             </ul>
           </div>
-          <a href="" class="link-more">더보기</a>
+          <a href="" role="button" class="link-more">더보기</a>
         </section>
 
       </section>
@@ -1590,7 +1598,7 @@
     <a href="" class="kakao">
       <img src="./assets/images/fixed-top1.png" alt=""><span>톡상담</span>
     </a>
-    <a href="" class="btn-top">
+    <a href="" role="button" class="btn-top">
       <img src="./assets/images/fixed-top2.png" alt=""><span class="blind">상단으로가기</span></a>
   </div>
 
