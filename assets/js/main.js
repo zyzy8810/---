@@ -1,11 +1,11 @@
-// sc-left 닫고 열기
 $(function () { //문서 로드 후 최초 1회 
-
+  
+  // sidenav 닫고 열기
   $('#sideBtn').click(function () {
     $('.sidenav,.dimmed').addClass('on');
     $('body').addClass('no-scroll')
   })
-
+  //btn-close,dimmed 눌렀을 때도 닫히게
   $('.sidenav .btn-close,.dimmed').click(function () {
     $('.sidenav,.dimmed').removeClass('on');
     $('body').removeClass('no-scroll')
@@ -14,18 +14,10 @@ $(function () { //문서 로드 후 최초 1회
 
   $('.sidenav .nav').click(function (e) {
     e.preventDefault();
-
     $(this).toggleClass('open').siblings('.sub-list').slideToggle()
-
-
   })
 
-  /* 
-  *
-  */
-
   // sc-search 닫고 열기
-
   $('.search').click(function () {
     $('.sc-search').addClass('on');
     $('body').addClass('no-scroll');
@@ -36,12 +28,7 @@ $(function () { //문서 로드 후 최초 1회
     $('body').removeClass('no-scroll');
   })
 
-  /**
-   * 
-   * 
-   * 
-   */
-
+  // 탑슬라이드
   var topSlide = new Swiper(".top-slide", {
     effect: "fade",
     loop: true,
@@ -51,19 +38,12 @@ $(function () { //문서 로드 후 최초 1회
     }
   });
 
-
-  /**
-   * @123123
-   * 
-   * 
-   */
+  // 메인슬라이드
   var mainSlide = new Swiper(".main-slide", {
     effect: "fade",
     loop: true,
-      // autoplay: true 도 가능하며 객체 데이터로 할당하면 추가적인 옵션 설정 가능
   autoplay: {
-    // 자동재생 여부
-    delay: 2000, // 시작시간 설정
+    delay: 2000,
   },
     pagination: {
       el: ".pagination"
@@ -78,7 +58,7 @@ $(function () { //문서 로드 후 최초 1회
 
   let lastScroll = 0;
   $(window).scroll(function () {
-    curr = $(this).scrollTop(); //내현재크를바의 위치
+    curr = $(this).scrollTop();
     if (curr > 0) {
       $('.header').addClass('fixed')
     } else {
@@ -86,13 +66,11 @@ $(function () { //문서 로드 후 최초 1회
     }
 
     if (curr >= 10) {
-
       if (curr > lastScroll) {
         $('.fix-btn').removeClass('show');
       } else {
         $('.fix-btn').addClass('show');
       }
-
     } else {
       $('.fix-btn').removeClass('show');
     }
@@ -101,9 +79,7 @@ $(function () { //문서 로드 후 최초 1회
   $(window).trigger('scroll');
 
 
-
-
-
+/* 탑메뉴 */
   $('.gnb .group-nav .btn-open').click(function () {
     $('.gnb').toggleClass('open');
     $('.gnb .group-sub').slideToggle()
@@ -111,6 +87,8 @@ $(function () { //문서 로드 후 최초 1회
 
 
 
+
+/* 제품별 슬라이드 */
   var swiper = new Swiper(".product-slide1", {
     slidesPerView: 2.3,
     spaceBetween: 10,
